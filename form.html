@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="cntainer">
+            <div class="frame">
+                <form class="form"  onsubmit="alertMassege();return false">
+
+                    <legend>Submitting Your Order</legend>
+                    <label for="name" id="first">Enter Your Name</label>
+                    <input type="text" class="form-styling" required pattern="[A-Za-z]{2,30}">
+                    <label for="phone">Enter Your Phone Number</label>
+                    <input type="text" class="form-styling" required pattern="[0-9]{10}">
+                    <label for="locat">Enter Your Location</label>
+                    <textarea name="location" class="form-styling" id="locate" required></textarea>
+                    <input type="submit" class="submit" id="submit">
+
+                </form>
+            </div>
+        </div>
+        <div id="myModal" class="modal">>
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2>opreation success</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Thank's For Shopping With Us</p>
+                    <button class="submit" id="ok">OK</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="javascript/form.js"></script>
+</body>
+
+</html>
