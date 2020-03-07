@@ -10,3 +10,15 @@ this company for hand craft soap
 
 
 our project is online shope the user can choose the prodcut which is soap and buy it.
+
+## wireframe
+Note: the header for all pages are same.
+1- homepage:
+![homepage](img/homePage.jpg)
+2- shop
+![shop](img/shop.jpg)
+3- form
+![form](img/form.JPG)
+4- about us 
+![aboutUs](img/aboutUs.jpg)
+
