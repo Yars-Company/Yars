@@ -9,6 +9,20 @@ var soapsDescription = ['Very Soapy Soap', 'A Saab Soap' , 'The old traditional 
 var soapPicture = ['s1.jpg','s2.jpg','s3.jpg','soap4.jpg','soap5.jpg'];
 
 
+// Function to create the first local storage item if it doesnt exist
+if (localStorage.itemInCart === undefined ) {
+  var firstItem = JSON.stringify(cartItem);
+  localStorage.itemInCart = firstItem;
+}
+
+// Function to retrieve cart items from local storage
+function retrieveLocalStorage(){
+  var retrievedLocal = localStorage.itemInCart;
+  cartItem = JSON.parse(retrievedLocal);
+}
+retrieveLocalStorage();
+
+
 // Constructor function to create soap item list
 function ListItems (name, description, url){
   this.name = name;
@@ -70,15 +84,16 @@ function addToCart(event){
   var addItem = event.target;
   var itemID = addItem.parentElement.id;
 
-  if (cartItem.indexOf(availableItems[itemID]) >= 0 ) {
+  if (cartItem.includes(availableItems[itemID]) === true) {
     alert('ITEM ALREADY EXISTS IN CART!');
   } else {
     cartItem.push(availableItems[itemID]);
-    console.log(`ADDED ${itemID}`);
+    cartLocalStorage();
   }
 }
 
 // Function to stringify the cart items and add it to local storage
-function cartLocalStorage (){
-  var jsonCart = JSON.stringify();
+function cartLocalStorage(){
+  var jsonCart = JSON.stringify(cartItem);
+  localStorage.itemInCart = jsonCart;
 }
