@@ -2,10 +2,11 @@
 
 //Global Variables
 var availableItems = [];
+var cartItem = []; //Array to save all the added items of the cart
 var soapsDiv = document.getElementById('soapSales');
 var soapsNames = ['Soapy' , 'Saab', 'Baladi', 'Nabulsi', 'M3a6arah'];
 var soapsDescription = ['Very Soapy Soap', 'A Saab Soap' , 'The old traditional soap', 'Nabulsi soap 3\'anye 3an el ta3reef ','soap with nice smell'];
-var soapPicture = ['soap1.jpg','soap2.jpg','soap3.jpg','soap4.jpg','soap5.jpg'];
+var soapPicture = ['s1.jpg','s2.jpg','s3.jpg','soap4.jpg','soap5.jpg'];
 
 
 // Constructor function to create soap item list
@@ -30,7 +31,7 @@ for (var i = 0; i<soapsNames.length;i++){
 
   // Now to create each items information, first is the name
 
-  var itemName = document.createElement('h3');
+  var itemName = document.createElement('h5');
   itemDiv.appendChild(itemName);
   console.log(availableItems[i].name);
   itemName.textContent = availableItems[i].name;
@@ -46,5 +47,38 @@ for (var i = 0; i<soapsNames.length;i++){
   var itemDescription = document.createElement('p');
   itemDiv.appendChild(itemDescription);
   itemDescription.textContent = availableItems[i].description;
+
+  // Now creating a button to add to cart
+
+  var buttonEl = document.createElement('button');
+  itemDiv.appendChild(buttonEl);
+  buttonEl.className = 'addToCartButton';
+  buttonEl.textContent = 'Add to cart';
 }
 
+// Make an array to with all buttons to choose from them
+var buttonElClass = document.getElementsByClassName('addToCartButton');
+
+// Adding event listeners to the buttons
+for (i = 0; i < availableItems.length ; i++){
+  var addButton = buttonElClass[i];
+  addButton.addEventListener('click', addToCart);
+}
+
+// Event listener function for the "add to cart" button to save what you clicked inside an array
+function addToCart(event){
+  var addItem = event.target;
+  var itemID = addItem.parentElement.id;
+
+  if (cartItem.indexOf(availableItems[itemID]) >= 0 ) {
+    alert('ITEM ALREADY EXISTS IN CART!');
+  } else {
+    cartItem.push(availableItems[itemID]);
+    console.log(`ADDED ${itemID}`);
+  }
+}
+
+// Function to stringify the cart items and add it to local storage
+function cartLocalStorage (){
+  var jsonCart = JSON.stringify();
+}
