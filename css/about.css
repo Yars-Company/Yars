@@ -1,0 +1,89 @@
+body{
+    width: 1080px;
+    margin: auto;
+    background-color: #FDF0DD;
+}
+.chiled {
+    width: 10%;
+    float: right;
+    margin-left: 9%;
+    border-radius: 20px;
+}
+.chiledName{
+    width: 10%;
+    float: right;
+    margin-left: 11%;
+    border-radius: 20px;
+    
+}
+.perant{
+float: left;  
+width: 100%;
+height:fit-content;  
+}
+.perant-main{
+    clear: both;
+    float: right;  
+width: 100%;
+height:fit-content; 
+}
+.float-right {
+        float: right;
+        margin-left: 20%;
+        margin-top: -13%;
+    }
+.float-left{
+    float: left;
+    margin-top: -10%;
+    width: 80%;
+    margin-left: 7%;
+
+}
+
+
+
+#Sondos{
+    margin-top: 15px;
+ 
+}
+#img-left{
+    float: left;
+}
+/* #raghad{
+    transform: rotate(-90deg);
+} */
+.name{
+    font-size: 40px;
+    cursor: pointer;
+    color: #F7BE3E;
+}
+.hederName{
+    margin-top: -72px;
+    margin-left: -8%;
+    font-family: 'Oleo Script', cursive;
+}
+main h2{
+    text-align: center;
+    color: #a0896a;
+}
+main h5{
+    text-align: center;
+    color: #a0896a;
+    font-size: medium;
+}
+#inter{
+    color: #a0896a;
+    text-align: center;
+    font-size: larger;
+}
+#yazanPar{
+    margin-right: 33px;
+
+} 
+.perant-main p {
+    color: #4a4a4a;
+    border: 2px solid #F7BE3E;
+    border-radius: 19px;
+    padding: 10px;
+
+}
