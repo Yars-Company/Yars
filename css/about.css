@@ -3,6 +3,9 @@ body{
     margin: auto;
     background-color: #FDF0DD;
 }
+html{
+    scroll-behavior: smooth;
+}
 .chiled {
     width: 10%;
     float: right;
@@ -62,8 +65,8 @@ margin-right: 3%;
     color: #F7BE3E;
 }
 .hederName{
-    margin-top: -72px;
-    margin-left: -8%;
+    margin-top: 25px;
+    margin-left: -14%;
     font-family: 'Oleo Script', cursive;
 }
 
@@ -126,12 +129,18 @@ main h5{
 
 
 }
+#img-main2{
+    width: 30px;
+    padding-bottom: 40px;
+}
+#icon-top{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}
 footer{
     clear: both;
 }
 .copyright{
     text-align: center;
-}
-.perant.hederName.scrollanimation.animated.slideInRight.adr-8 {
-    margin-top: 2%;
 }
