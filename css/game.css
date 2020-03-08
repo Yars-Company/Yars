@@ -28,7 +28,9 @@ h2 {
     text-align: center;
     padding: 39px 0 56px 0;
     font-size: 49px;
-    color: var(--font-color);
+    color: white;
+    position: sticky;
+    z-index: 50;
 }
 img#reload {
     text-align: center;
@@ -37,4 +39,29 @@ img#reload {
     height: 50px;
     position: absolute;
     left: 45%;
+}
+#label {
+    background-color: #e09722;
+    border-radius: 73px;
+    width: 990px;
+    text-align: center;
+    position: relative;
+    left: 8%;
+}
+div#label2 {
+    background-color: #d85427;
+    width: 833px;
+    height: 95px;
+    left: 8%;
+    border-radius: 73px;
+    top: 17%;
+    position: absolute;
+}
+#triangle {
+    background-color: #e09722;
+    width: 87%;
+    height: 20%;
+    top: 37%;
+    left: 4%;
+    position: absolute;
 }

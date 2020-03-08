@@ -24,7 +24,7 @@ function shuffle(array) {
 
 
 intialDom();
-setTimeout(hideAllImage, 5000);
+setTimeout(hideAllImage, 2000);
 function hideAllImage() {
   var show = document.getElementsByClassName('show');
   var hide = document.getElementsByClassName('hide');
@@ -82,7 +82,6 @@ function compare(front,back) {
     matching = front.alt;
     firstClickImage = front.id;
   }
-
 }
 
 function correctAnswer(front) {
