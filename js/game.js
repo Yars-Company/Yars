@@ -6,6 +6,7 @@ whenClick.addEventListener('click', flip);
 var backImage = new BulidImage('back');
 var matching;
 var firstClickImage;
+var score = 0;
 // constrctur
 shuffle(images);
 function BulidImage(nameImage) {
@@ -24,7 +25,7 @@ function shuffle(array) {
 
 
 intialDom();
-setTimeout(hideAllImage, 5000);
+setTimeout(hideAllImage, 2000);
 function hideAllImage() {
   var show = document.getElementsByClassName('show');
   var hide = document.getElementsByClassName('hide');
@@ -82,7 +83,6 @@ function compare(front,back) {
     matching = front.alt;
     firstClickImage = front.id;
   }
-
 }
 
 function correctAnswer(front) {
@@ -91,6 +91,7 @@ function correctAnswer(front) {
   front.setAttribute('class', 'hideVisibility');
   whenClick.addEventListener('click',flip);
   matching = '';
+  score++;
 }
 
 function falseAnswer( front, back) {
