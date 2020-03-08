@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <title>Yars About Us </title>
 </head>
-
 <body>
     <header>
         <img src="img/logo.jpg" class="logo">
         <nav>
-        <ul>
-            <li class="shihab"><a href="" >Cart </a></li>
-            <li class="shihab"><a href="#" >About Us </a></li>
-            <li class="shihab"><a href="store.html" >Store</a></li>
-            <li class="shihab"><a href="yasmin.html" > Home </a> </li>
-        </ul>
+            <ul>
+                <li class="shihab"><a href="">Cart </a></li>
+                <li class="shihab"><a href="#">About Us </a></li>
+                <li class="shihab"><a href="store.html">Store</a></li>
+                <li class="shihab"><a href="yasmin.html"> Home </a> </li>
+            </ul>
         </nav>
-    </header> 
+    </header>
     <main>
         <h2>Hello, We are Yars groub </h2>
         <p id="inter">
             Yars it is group of students studied 201 course and need to practice CSS and HTML and JavaScript
         </p>
         <h5>Stand for : </h5>
-        <div class="perant hederName scrollanimation animated slideInRight adr-8">
+        <div class="perant hederName " data-aos="flip-right">
             <h5 id="s" class="chiledName name ">S</h5>
             <h5 id="r" class="chiledName name ">R</h5>
             <h5 id="a" class="chiledName name ">A</h5>
             <h5 id="y" class="chiledName name ">Y</h5>
         </div>
+       
         <div class="perant-main">
-            <img id="img-left" class="chiled scrollanimation animated fadeInLeft adr-8" src="img/yaljamal.jpeg"
-                alt="Yazan Aljamal Pic">
-            <p class="float-right scrollanimation animated fadeInRight adr-8" id="">
+            <img id="img-left" class="chiled " data-aos="fade-right" src="img/yaljamal.jpeg" alt="Yazan Aljamal Pic">
+            <p class="float-right " id="">
                 Yazan Aljamal : <br>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
             </p>
-            <img class="chiled scrollanimation animated fadeInRight adr-8" src="img/yasmen.jpg" alt="Yasmen Pic">
-            <p class="float-left scrollanimation animated fadeInLeft adr-8">
+            <img class="chiled " data-aos="fade-up-left" src="img/yasmen.jpg" alt="Yasmen Pic">
+            <p class="float-left ">
                 Yasmin Adaileh : <br>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <img id="img-left" class="chiled scrollanimation animated fadeInLeft adr-8" src="img/ammar.png"
-                alt="Ammar Pic">
-            <p class="float-right scrollanimation animated fadeInRight adr-8">
+            <img id="img-left" class="chiled " data-aos="fade-right" src="img/ammar.png" alt="Ammar Pic">
+            <p class="float-right ">
                 Ammar Badwan : <br>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <img id="raghad" class="chiled scrollanimation animated fadeInRight adr-8" src="img/raghad.png" alt="Raghad Pic">
-            <p class="float-left scrollanimation animated fadeInLeft adr-8">
+            <img id="raghad" class="chiled " data-aos="fade-up-left" src="img/raghad.png" alt="Raghad Pic">
+            <p class="float-left ">
                 Raghad Najjar : <br>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <img id="img-left" class="chiled scrollanimation animated fadeInLeft adr-8" src="img/sondos.JPG"
-                alt="Sondos Pic">
-            <p class="float-right scrollanimation animated fadeInRight adr-8">
+            <img id="img-left" class="chiled " data-aos="fade-right" src="img/sondos.JPG" alt="Sondos Pic">
+            <p class="float-right ">
                 Sondos Abu-Elayyan : <br>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
+        </div>
+        <div id="icon-top" class="icon-top">
+            <a href="#top"><img src="img/top.png" alt="" id="img-main2"></a>
         </div>
     </main>
     <footer>
@@ -89,8 +86,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script
         src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
     <script src="js/about.js"></script>
