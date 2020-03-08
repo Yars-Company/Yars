@@ -117,7 +117,7 @@ header nav{
     top: 112px;
     width: 100%;
     /* height: calc(100vh - 68px); */
-    height: 400px;
+    /* height: 400px; */
 }
 
 h1{
@@ -133,6 +133,7 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     height: 80px;
+    top: 1000px;
     width: 100%;
    
  
@@ -159,6 +160,7 @@ h1{
     font-size: 40px;
     text-align: center;
     line-height: 1.5;
+    top: 1000px;
 }
 h2{
     margin: 70px 0 0 0;
@@ -168,7 +170,7 @@ h2{
     width: 100%;
     position: absolute;
     top: 1005px;
-    height: 600px;
+    top: 1335px;
     margin:  0 0 70px 0;
 }
 .left{
@@ -176,7 +178,7 @@ h2{
     position: absolute;
     height: 510px;
     float: left;
-    top: 1605px;
+    top: 2090px;
     background-color: #cba236;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -192,7 +194,7 @@ h2{
     position: absolute;
     height: 510px;
     float: right;
-    top: 1605px;
+    top: 2090px;
     background-color: #93a43a;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -214,7 +216,7 @@ h2{
     height:500px;
     width: 50%;
     position: relative;
-    top: 1458px;
+    top: 1943px;
     float: right;
 
 }
@@ -242,7 +244,7 @@ h2{
     height:500px;
     width: 50%;
     position: relative;
-    top: 1458px;
+    top: 1543px;
    
 }
 .gift{
@@ -256,10 +258,11 @@ h2{
     margin: 80px 60px;
     color: rgb(189, 110, 41);
     font-style: italic;
+    top: 395px;
     
 }
 footer{
-    top: 2615px;
+    top: 3099px;
     position: absolute;
     width: 100%;
     height: 50%;
