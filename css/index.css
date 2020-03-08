@@ -1,0 +1,91 @@
+body{
+    /* width: 100%;
+    position: relative; */
+    /* z-index: 999999; */
+    /* margin: -27px; */
+    text-align: center;
+}
+.loading{
+    background: rgb(243, 145, 59);
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    top: 0;
+    position: relative;
+    z-index : 9999;  
+    animation: remove 10s ease alternate forwards;
+}
+.elementLoad{
+    width: 250px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 40%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border-top: 10px solid rgb(245, 190, 160);
+    animation: rotate 5s reverse infinite;
+}
+.name{
+    color: #fff;
+        position: absolute;
+        top: 47%;
+        left: 53%;
+}
+.elementLoad::before, .elementLoad::after{
+    content: '';
+    width: 250px;
+    height: 150px;
+    position: relative;
+    left: 0;
+    top: 0px;
+    box-sizing: border-box;
+    border-radius: 40%;
+}
+.elementLoad::before{
+    border-top: 10px solid rgb(245, 190, 160);
+    transform: rotate(180deg);
+}
+.elementLoad::after{
+    border-top: 10px solid #E8F5CE;
+    transform: rotate(360deg);
+    
+}
+@keyframes rotate{
+    to{
+        transform: rotate(180deg);
+    }
+}
+@keyframes remove{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+.shihab{
+display: inline-block;
+margin: 50px;
+float:right;
+}
+.logo{
+    float: left;
+    width: 9%;
+}
+
+
+header{
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    background-color: red;
+}
