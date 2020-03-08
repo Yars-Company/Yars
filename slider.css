@@ -1,0 +1,23 @@
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+
+}
+/* .w3-content{
+    
+    width: 100%;
+    height: 50%;
+
+} */
+div{
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+button{
+    box-sizing: border-box;
+    height: 65px;
+    width: 70px;
+    position: absolute;
+}
