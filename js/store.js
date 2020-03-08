@@ -84,9 +84,10 @@ function addToCart(event){
   var itemID = addItem.parentElement.id;
 
   if (cartItem.includes(availableItems[itemID]) === true) {
-    alert('ITEM ALREADY EXISTS IN CART!');
+    alert('This item already exists inside your cart!');
   } else {
     cartItem.push(availableItems[itemID]);
+    alert(`Item ${availableItems[itemID].name} has been added to your cart!`);
     cartLocalStorage();
   }
 }
