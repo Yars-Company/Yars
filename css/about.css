@@ -87,3 +87,9 @@ main h5{
     padding: 10px;
 
 }
+footer{
+    clear: both;
+}
+.copyright{
+    text-align: center;
+}
