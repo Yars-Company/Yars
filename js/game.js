@@ -6,6 +6,7 @@ whenClick.addEventListener('click', flip);
 var backImage = new BulidImage('back');
 var matching;
 var firstClickImage;
+var score = 0;
 // constrctur
 shuffle(images);
 function BulidImage(nameImage) {
@@ -90,6 +91,7 @@ function correctAnswer(front) {
   front.setAttribute('class', 'hideVisibility');
   whenClick.addEventListener('click',flip);
   matching = '';
+  score++;
 }
 
 function falseAnswer( front, back) {
