@@ -45,7 +45,7 @@ for (var i = 0; i < cartItem.length; i++){
 
   var priceEl = document.createElement('span');
   divEl.appendChild(priceEl);
-  priceEl.textContent = cartItem[i].price + 'JOD';
+  priceEl.textContent = cartItem[i].price + ' JOD';
   priceEl.className = 'priceOfSoap';
 
   // Add remove button

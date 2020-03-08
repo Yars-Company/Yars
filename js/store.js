@@ -75,7 +75,7 @@ for (var i = 0; i<soapsNames.length;i++){
 
   var priceEl = document.createElement('span');
   itemDiv.appendChild(priceEl);
-  priceEl.textContent = availableItems[i].price + 'JOD';
+  priceEl.textContent = availableItems[i].price + ' JOD';
 }
 // Make an array to with all buttons to choose from them
 var buttonElClass = document.getElementsByClassName('addToCartButton');
