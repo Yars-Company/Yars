@@ -119,9 +119,9 @@ var clearAll = document.getElementById('clearAll');
 clearAll.addEventListener('click', clearAllFunction);
 
 function clearAllFunction(){
-  var elementsToClear = document.getElementsByClassName('itemInformation');
-  while(elementsToClear[0]) {
-    elementsToClear[0].parentNode.removeChild(elementsToClear[0]);
+  var soapsToClear = document.getElementsByClassName('itemInformation');
+  while(soapsToClear[0]) {
+    soapsToClear[0].parentNode.removeChild(soapsToClear[0]);
   }
   localStorage.clear();
   cartItem = [];
