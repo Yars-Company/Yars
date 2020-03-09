@@ -43,6 +43,7 @@ for (var i = 0; i<soapsNames.length;i++){
 
   var itemDiv = document.createElement('div');
   itemDiv.className = ('itemDiv');
+  itemDiv.setAttribute('data-aos','flip-left');
   itemDiv.id = i;
   soapsDiv.appendChild(itemDiv);
 
