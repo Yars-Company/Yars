@@ -55,22 +55,9 @@ margin: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px;
+    left: 3%;
   
 }
-
-
-.wrapper .text {
-    position:relative;
-    bottom:30px;
-    left:0px;
-    visibility:hidden;
-    }
-    
-    .wrapper:hover .text {
-    visibility:visible;
-    width: 50px;
-    height: 50px;
-    }
 
 
 .itemDiv{
@@ -118,4 +105,11 @@ button{
 }
 button:hover{
     background-color: #A18D72;
+}
+a{
+    text-decoration: none;
+    color: #483c3c;
+    cursor: pointer;
+    font-size: 18px;
+
 }

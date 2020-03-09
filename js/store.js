@@ -4,11 +4,11 @@
 var availableItems = [];
 var cartItem = []; //Array to save all the added items of the cart
 var soapsDiv = document.getElementById('soapSales');
-var soapsNames = ['Roses' , 'Lavender and Blue Clay', 'Argan and Cinnamon', 'Mango Papaya', 'M3a6arah',
+var soapsNames = ['Roses' , 'Lavender and Blue Clay', 'Argan and Cinnamon', 'Mango Papaya', 'SWEET ORANGE',
 'Orchid oil soap','Pink Flower','SWEET ORANGE',' LAVENDER'];
-var soapsDescription = ['Cocoa and Shea Butter', 'Argan and Cinnamon' , 'Lavender and Blue Clay', 'Pure Natural Beeswax Candles ','Coffee Bean'];
+var soapsDescription = ['Cocoa and Shea Butter', 'Argan and Cinnamon' , 'Lavender and Blue Clay', 'Pure Natural Beeswax Candles ','Coffee Bean','item6','item7','item8','item9'];
 var soapPicture = ['soap1.jpg','soap2.jpg','soap3.jpg','soap4.jpg','soap11.jpg','soap6.jpg','soap7.jpg','soap8.jpg','soap9.jpg'];
-var soapPrice = [7,8,4,6,10];
+var soapPrice = [2,3.5,3,5.25,11,3,4.25,1.50,2.50];
 
 
 // Function to create the first local storage item if it doesnt exist
@@ -44,6 +44,8 @@ for (var i = 0; i<soapsNames.length;i++){
   var itemDiv = document.createElement('div');
   itemDiv.className = ('itemDiv');
   itemDiv.setAttribute('data-aos','flip-left');
+  
+
   itemDiv.id = i;
   soapsDiv.appendChild(itemDiv);
 
