@@ -7,6 +7,7 @@ var backImage = new BulidImage('back');
 var matching;
 var firstClickImage;
 var score = 0;
+
 // constrctur
 shuffle(images);
 function BulidImage(nameImage) {
@@ -73,6 +74,8 @@ function flip(event) {
 function compare(front,back) {
   if (matching && matching === front.alt) {
     whenClick.removeEventListener('click',flip);
+    score++;
+    console.log(score);
     setTimeout(()=>correctAnswer(front),2000);
   }
   else if (matching && matching !== front.alt) {
@@ -91,7 +94,7 @@ function correctAnswer(front) {
   front.setAttribute('class', 'hideVisibility');
   whenClick.addEventListener('click',flip);
   matching = '';
-  score++;
+  result();
 }
 
 function falseAnswer( front, back) {
@@ -104,4 +107,18 @@ function falseAnswer( front, back) {
   whenClick.addEventListener('click',flip);
   matching = '';
 }
+
+function result(){
+  if (score === 3){
+    var modal = document.getElementById('myModal');
+    var buttonOk = document.getElementById('ok');
+    buttonOk.onclick = function() {
+      modal.style.display = 'none';
+    };
+    modal.style.display = 'block';
+    var head = document.getElementsByTagName('h3')[0];
+    head.setAttribute('id','animate');
+  }
+}
+
 

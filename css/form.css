@@ -136,12 +136,7 @@ label {
   p {
     padding-bottom: 18px;
 }
-/* div#myModal {
-    width: 23rem;
-    text-align: center;
-    margin: auto;
-    transform: translate(0, 160%);
-} */
+
 button#ok {
     margin-bottom: 6px;
 }
