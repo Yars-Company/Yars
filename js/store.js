@@ -4,9 +4,10 @@
 var availableItems = [];
 var cartItem = []; //Array to save all the added items of the cart
 var soapsDiv = document.getElementById('soapSales');
-var soapsNames = ['Soapy' , 'Saab', 'Baladi', 'Nabulsi', 'M3a6arah'];
-var soapsDescription = ['Very Soapy Soap', 'A Saab Soap' , 'The old traditional soap', 'Nabulsi soap 3\'anye 3an el ta3reef ','soap with nice smell'];
-var soapPicture = ['s1.jpg','s2.jpg','s3.jpg','soap4.jpg','soap5.jpg'];
+var soapsNames = ['Roses' , 'Lavender and Blue Clay', 'Argan and Cinnamon', 'Mango Papaya', 'M3a6arah',
+'Orchid oil soap','Pink Flower','SWEET ORANGE',' LAVENDER'];
+var soapsDescription = ['Cocoa and Shea Butter', 'Argan and Cinnamon' , 'Lavender and Blue Clay', 'Pure Natural Beeswax Candles ','Coffee Bean'];
+var soapPicture = ['soap1.jpg','soap2.jpg','soap3.jpg','soap4.jpg','soap11.jpg','soap6.jpg','soap7.jpg','soap8.jpg','soap9.jpg'];
 var soapPrice = [7,8,4,6,10];
 
 
@@ -42,6 +43,7 @@ for (var i = 0; i<soapsNames.length;i++){
 
   var itemDiv = document.createElement('div');
   itemDiv.className = ('itemDiv');
+  itemDiv.setAttribute('data-aos','flip-left');
   itemDiv.id = i;
   soapsDiv.appendChild(itemDiv);
 
@@ -64,6 +66,12 @@ for (var i = 0; i<soapsNames.length;i++){
   itemDiv.appendChild(itemDescription);
   itemDescription.textContent = availableItems[i].description;
 
+  // Now creating the price tab
+
+  var priceEl = document.createElement('p');
+  itemDiv.appendChild(priceEl);
+  priceEl.textContent = availableItems[i].price + ' JOD';
+
   // Now creating a button to add to cart
 
   var buttonEl = document.createElement('button');
@@ -71,11 +79,7 @@ for (var i = 0; i<soapsNames.length;i++){
   buttonEl.className = 'addToCartButton';
   buttonEl.textContent = 'Add to cart';
 
-  // Now creating the price tab
-
-  var priceEl = document.createElement('span');
-  itemDiv.appendChild(priceEl);
-  priceEl.textContent = availableItems[i].price + ' JOD';
+ 
 }
 // Make an array to with all buttons to choose from them
 var buttonElClass = document.getElementsByClassName('addToCartButton');

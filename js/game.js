@@ -1,5 +1,5 @@
 // global
-var images = ['s1', 's2', 's3', 's1', 's2', 's3'];
+var images = ['soap1', 'soap2', 'soap3', 'soap1', 'soap2', 'soap3'];
 var arrImageObject = [];
 var whenClick = document.getElementById('container');
 whenClick.addEventListener('click', flip);
