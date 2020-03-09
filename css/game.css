@@ -37,7 +37,7 @@ img#reload {
     height: 50px;
     position: absolute;
     left: 80%;
-    top: 50%;
+    top: 51%;
 }
 
 
@@ -96,7 +96,7 @@ button#ok {
   /*draw the background*/
     div#container {
         position: absolute;
-        width: 60%;
+        width: 65%;
         display: inline-flex;
         height: 650px;
         top: 42%;
@@ -114,7 +114,7 @@ button#ok {
     width: 76%;
     height: 14%;
     text-align: center;
-    left: 9.5%;
+    left: 11%;
     top: 1%;
     border-radius: 38px;
 }
@@ -133,7 +133,7 @@ div#label2 {
     position: absolute;
     width: 79%;
     top: 12%;
-    left: 8%;
+    left: 12%;
     border-radius: 38px;
 }
 div#triangle {
@@ -166,14 +166,15 @@ div#triangle {
 }
 .curt {
     position: absolute;
-    top: 38%;
-    left: 47.5%;
+    top: 38.2%;
+    left: 52.3%;
     z-index: +3;
     transform: rotateY(180deg);
 }
+
 .curt2 {
     position: absolute;
-    top: 38%;
+    top: 38.2%;
     left: 1%;
     z-index: +3;
     
@@ -184,6 +185,13 @@ div#triangle {
     top: 87%;
     height: 80%;
     width: 20%;
+    transform: rotateY(180deg);
+}
+
+.doorOpen
+{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 }
 /* #bubble {
     position: absolute;
