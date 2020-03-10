@@ -72,13 +72,9 @@ for (i = 0; i < availableItems.length ; i++){
 function addToCart(event){
   var addItem = event.target;
   var itemID = addItem.parentElement.id;
-  if (cartItem.includes(availableItems[itemID]) === true) {
-    alert('This item already exists inside your cart!');
-  } else {
     cartItem.push(availableItems[itemID]);
     alert(`Item ${availableItems[itemID].name} has been added to your cart!`);
     cartLocalStorage();
-  }
 }
 // Function to stringify the cart items and add it to local storage
 function cartLocalStorage(){
