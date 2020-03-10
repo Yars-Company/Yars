@@ -148,3 +148,8 @@ function clearAllFunction(){
   cartItem = [];
 }
 
+function cartLength(){
+  var length = document.getElementById('cartLength');
+  length.textContent = '[' + cartItem.length + ']';
+}
+cartLength()

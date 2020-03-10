@@ -1,20 +1,23 @@
-body {
-    width: 90%;
-    margin: 25px auto;
-    min-height: 40%;
-}
+
 
 h4{
     font-size: 26px;
     margin: 20px auto;
     width: 90%;
+    padding-bottom: 5px;
     text-align: center;
+    font-family: Lobster, cursive;
     font-weight: bolder;
-    border-bottom: 5px double black;
+    border-bottom: 5px double rgb(87, 87, 87);
     border-radius: 20px;
 }
 main{
-    min-height: calc(100vh - 90px - 310px);
+    min-height: calc(100vh - 290px);
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    font-size: 24px;
 
 }
 .mainHeader{
@@ -33,6 +36,7 @@ main{
     justify-content: space-between;
 }
 .mainHeader span{
+    font-size: 24px;
     text-decoration: underline;
 }
 
@@ -81,6 +85,8 @@ main{
 .nameOfSoap, .priceOfSoap{
     width: 22%;
     margin: auto 0;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center; 
 }
 .removeButton {
@@ -89,6 +95,7 @@ main{
     margin: auto 0;
     background-color: beige;
     border: 1px solid black;
+    font-weight: bold;
     border-radius: 20px;
     color: rgb(85, 84, 84);
     cursor: pointer;
@@ -124,6 +131,11 @@ main{
     border-radius: 0 0 25px 25px;
     text-align: center;
 }
+#emptyCartWarning a{
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid gray;
+}
 
 #totalTag {
     font-size: 26px;
@@ -138,4 +150,9 @@ main{
     border-top: 0;
     border-radius: 0 0 25px 25px;
     text-align: center;
+}
+#totalTag a{
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid gray;
 }
