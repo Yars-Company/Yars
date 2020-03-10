@@ -63,17 +63,18 @@ var buttonElClass = document.getElementsByClassName('removeButton');
 
 // Adding event listeners to the buttons
 for (i = 0; i < cartItem.length ; i++){
-  var removeButton = buttonElClass[i];
+  var removeButton = document.getElementById(i);
   removeButton.addEventListener('click', removingButton);
 }
 
 function removingButton(event){
   var removeItem = event.target;
   var itemID = removeItem.parentElement.id;
-  updateTotal(itemID);
-  document.getElementById(itemID).remove();
   cartItem.splice(itemID , 1);
   updateCart();
+  console.log('before updating total' + totalPrice);
+  updateTotal();
+  document.getElementById(itemID).remove();
   console.log(itemID);
 }
 
@@ -91,7 +92,11 @@ function totalPriceFunction(){
     bottomHeader.appendChild(botHeaderEl);
     botHeaderEl.id = 'totalTag';
     bottomHeader.appendChild = totalPrice;
-    botHeaderEl.textContent = 'Your current price is: ' + totalPrice + ' JOD';
+    botHeaderEl.textContent = 'Your current price is: ' + totalPrice + ' JOD, ';
+    var anchor = document.createElement('a');
+    anchor.textContent = 'Checkout Page';
+    anchor.href = './form.html';
+    botHeaderEl.appendChild(anchor);
     console.log('cart got items');
   }
 }
@@ -99,10 +104,19 @@ totalPriceFunction();
 
 // Updating total price after remove
 
-function updateTotal(itemID){
-  totalPrice = totalPrice - cartItem[itemID].price;
+function updateTotal(){
+  totalPrice = 0;
+  for (var q=0; q<cartItem.length; q++){
+    console.log(totalPrice);
+    totalPrice = totalPrice + cartItem[q].price;
+    console.log(totalPrice);
+  }
   var updatedPrice = document.getElementById('totalTag');
-  updatedPrice.textContent = 'Your current price is: ' + totalPrice + ' JOD';
+  updatedPrice.textContent = 'Your current price is: ' + totalPrice + ' JOD, ';
+  var anchor = document.createElement('a');
+  anchor.textContent = 'Checkout Page';
+  anchor.href = './form.html';
+  updatedPrice.appendChild(anchor);
 }
 
 // Function to update local storage after removing an item
@@ -119,11 +133,18 @@ var clearAll = document.getElementById('clearAll');
 clearAll.addEventListener('click', clearAllFunction);
 
 function clearAllFunction(){
-  var elementsToClear = document.getElementsByClassName('itemInformation');
-  while(elementsToClear[0]) {
-    elementsToClear[0].parentNode.removeChild(elementsToClear[0]);
+  var soapsToClear = document.getElementsByClassName('itemInformation');
+  while(soapsToClear[0]) {
+    soapsToClear[0].parentNode.removeChild(soapsToClear[0]);
   }
   localStorage.clear();
+  totalPrice = 0;
+  var updatedPrice = document.getElementById('totalTag');
+  updatedPrice.textContent = 'Your current price is: ' + totalPrice + ' JOD, please go back to the ';
+  var anchor = document.createElement('a');
+  anchor.textContent = 'Store Page';
+  anchor.href = './store.html';
+  updatedPrice.appendChild(anchor);
   cartItem = [];
 }
 
