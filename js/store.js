@@ -60,7 +60,6 @@ for (var i = 0; i<soapsNames.length;i++){
   itemDiv.appendChild(buttonEl);
   buttonEl.className = 'addToCartButton';
   buttonEl.textContent = 'Add to cart';
- 
 }
 // Make an array to with all buttons to choose from them
 var buttonElClass = document.getElementsByClassName('addToCartButton');
@@ -76,7 +75,7 @@ function addToCart(event){
   if (cartItem.includes(availableItems[itemID]) === true) {
     alert('This item already exists inside your cart!');
   } else {
-    cartItem.push(availableItems.ListItems[itemID]);
+    cartItem.push(availableItems[itemID]);
     alert(`Item ${availableItems[itemID].name} has been added to your cart!`);
     cartLocalStorage();
   }
@@ -86,3 +85,4 @@ function cartLocalStorage(){
   var jsonCart = JSON.stringify(cartItem);
   localStorage.itemInCart = jsonCart;
 }
+
