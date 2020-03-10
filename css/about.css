@@ -58,6 +58,10 @@ h3{
     text-align: center;
     margin-top: 1%;
 }
+main{
+    width: 1322px;
+
+}
 main img {
     width: 9%;
     padding: 70px;
@@ -149,6 +153,8 @@ footer{
     text-align: center;
     font-size: 18px;
     width: 33%;
+    margin-top: 35px;
+
     /* height: 100%; */
 }
 
@@ -157,6 +163,13 @@ footer{
     font-size: 20px;
     color: aliceblue;
     line-height: 1.5;
+}
+.color{
+    color: white;
+}
+.ulFooter{
+    margin-right: 47%;
+    margin-top: 3%;
 }
 .quickFooter{
     position: absolute;
