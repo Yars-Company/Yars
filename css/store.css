@@ -49,22 +49,15 @@ header{
 ul{
     margin: auto;
 }
-/* hr{
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    /* background-color: #FDF0DD; */
-    /* height: 0;
-border-top: 2px solid black;
-
-} */ 
-
+hr {
+    width: 351px;
+}
 #soapSales {
     padding: 20px;
     width: 90%;
     display: flex;
     position: absolute;
-    top: 125%;
+    top: 130%;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px;
@@ -125,7 +118,7 @@ iframe{
 }
 
 footer{
-    top: 330%;
+    top: 340%;
     position: absolute;
     width: 100%;
     height: 35%;
@@ -156,9 +149,8 @@ h1{
     text-align: center;
     font-family: 'Lobster', cursive;
     height: 100px;
-    width: 70x;
-    padding-bottom: 50px;
-    background-color: navajowhite;
+    padding-bottom: 10px;
+    background-color:	antiquewhite;
 }
 .text{
     font-family: 'Cormorant Garamond', serif;
