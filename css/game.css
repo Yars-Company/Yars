@@ -179,34 +179,8 @@ div#triangle {
     z-index: +3;
     
 }
-#door {
-    position: absolute;
-    left: 70%;
-    top: 87%;
-    height: 80%;
-    width: 20%;
-    transform: rotateY(180deg);
-}
 
-.doorOpen
-{
-  /*prespectiv creates the door open effect*/
-  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
-}
-/* #bubble {
-    position: absolute;
-    animation: move 3s ease-in-out 1s infinite alternate;
-}
-@keyframe move {
-0%{
-top: 0%
-right: 50%;
-}
-100%{
-top: 100%
-right: 100%
-}
-} */
+
 h3 {
     position: absolute;
     font-size: 30px;
@@ -223,4 +197,33 @@ animation: move 1s ease-in-out 1s infinite alternate;
     100%{
         top: 45%;
     }
+}
+
+.backDoor
+{
+  background-color: #333;
+  position: absolute;
+  width:150px;
+  height:300px;
+  left: 71%;
+    top: 113.5%;
+  margin: 0 auto;
+  margin-top:50px;
+}
+#door {
+    position: absolute;
+    left: 90%;
+    top: 86.5%;
+    height: 80%;
+    width: 20%;
+    transform: rotateY(180deg);
+    transform-origin: left;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.doorOpen
+{
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 }
