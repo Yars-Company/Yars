@@ -70,10 +70,12 @@ main img {
 #perantPar{
     display: flex;
     text-align: center;
+    height: 665px;
+
 }
 .claidPar{
-    width: 18%;
-    padding-left: 24px;
+    width: 17%;
+    padding-left: 32px;
    
 }
 
@@ -97,6 +99,8 @@ main img {
 .clidh4{
     padding-left: 3%;
     color: #ff8300;
+    padding-bottom: 7px;
+    padding-top: 9px;
 
 }
 p{
@@ -116,7 +120,7 @@ hr.hr-1 {
   }
 
 .social{
-    margin: 20px 30px 0px 18px;
+    margin: 10px 30px 0px 18px;
     padding: 0;
     cursor: pointer;
 
@@ -126,7 +130,7 @@ footer{
     /* top: 347%; */
     position: absolute;
     width: 100%;
-    height: 69%;
+    height: 200px;
     background-color: #3c3b57;
     
 }
@@ -145,7 +149,7 @@ footer{
     text-align: center;
     font-size: 18px;
     width: 33%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .headerAbout{
@@ -159,7 +163,7 @@ footer{
     text-align: center;
     font-size: 18px;
     width: 33%;
-    height: 100%;
+    /* height: 100%; */
     left: 30%;
     margin: 35px 0 0 0 ;
     
@@ -182,7 +186,8 @@ footer{
     text-align: center;
     font-size: 18px;
     width: 33%;
-    height: 100%;
+    /* height: 160px; */
+
 
 }
 .conHeader{
