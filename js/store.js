@@ -60,7 +60,6 @@ for (var i = 0; i<soapsNames.length;i++){
   itemDiv.appendChild(buttonEl);
   buttonEl.className = 'addToCartButton';
   buttonEl.textContent = 'Add to cart';
- 
 }
 // Make an array to with all buttons to choose from them
 var buttonElClass = document.getElementsByClassName('addToCartButton');
@@ -86,3 +85,4 @@ function cartLocalStorage(){
   var jsonCart = JSON.stringify(cartItem);
   localStorage.itemInCart = jsonCart;
 }
+
