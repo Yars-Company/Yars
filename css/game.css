@@ -96,7 +96,7 @@ button#ok {
   /*draw the background*/
     div#container {
         position: absolute;
-        width: 58%;
+        width: 63%;
         display: inline-flex;
         height: 650px;
         top: 42%;
@@ -166,15 +166,15 @@ div#triangle {
 }
 .curt {
     position: absolute;
-    top: 38.5%;
-    left: 46.7%;
+    top: 38.1%;
+    left: 50.5%;
     z-index: +3;
     transform: rotateY(180deg);
 }
 
 .curt2 {
     position: absolute;
-    top: 38.5%;
+    top: 38.1%;
     left: 1%;
     z-index: +3;
     
