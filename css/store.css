@@ -57,7 +57,7 @@ hr {
     width: 90%;
     display: flex;
     position: absolute;
-    top: 120%;
+    top: 130%;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px;
@@ -119,7 +119,7 @@ iframe{
 }
 
 footer{
-    top: 310%;
+    top: 340%;
     position: absolute;
     width: 100%;
     height: 35%;
