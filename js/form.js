@@ -11,3 +11,4 @@ var buttonOk = document.getElementById('ok');
 buttonOk.onclick = function() {
   modal.style.display = 'none';
 };
+
