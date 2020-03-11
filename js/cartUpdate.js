@@ -19,4 +19,4 @@ function cartLength(){
   var length = document.getElementById('cartLength');
   length.textContent = '[' + cartItem.length + ']';
 }
-cartLength()
+cartLength();

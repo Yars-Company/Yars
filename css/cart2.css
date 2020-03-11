@@ -65,86 +65,6 @@ hr.hr-1 {
     margin-top: 118px;
 }
 
-/* 
-footer{
-    position: absolute;
-    width: 88%;
-    height: 25%;
-    background-color: #3c3b57;
-
-    
-}
-
-.footer{
-    position: absolute;
-    text-align: center;
-    font-size: 18px;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-
-}
-.about{
-    position: absolute;
-    text-align: center;
-    font-size: 18px;
-    width: 33%;
-    height: 100%;
-    margin-top: 2%;
-
-}
-
-.headerAbout{
-    text-align: center;
-    font-size: 20px;
-    color: aliceblue;
-    line-height: 1.5;
-}
-.quickFooter{
-    position: absolute;
-    text-align: center;
-    font-size: 18px;
-    width: 33%;
-    height: 100%;
-    left: 30%;
-    margin: 35px 0 0 0 ;
-    
-}
-.quick{
-    text-align: center;
-    text-align: center;
-    line-height: 1.5;
-    color: aliceblue;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.contactUs{
-    left: 60%;
-    margin: 35px 0 0 0;
-    box-sizing: border-box;
-    border-radius: 50%;
-    color: aliceblue;
-    position: absolute;
-    text-align: center;
-    font-size: 18px;
-    width: 33%;
-    height: 100%;
-
-}
-.conHeader{
-    font-family: 'Cormorant Garamond', serif;
-    text-align: center;
-    font-size: 18px;
-    color: aliceblue;
-}
-footer a {
-    color: white;
-}
-.ulFooter{
-    margin-right: 48%;
-    margin-top: 3%;
-} */
-
 footer {
     background-color: #3C3B57;
     height: 200px;
@@ -163,7 +83,7 @@ footer div{
 
 footer div div{
     margin: 20px;
-    text-align: justify;
+    text-align: center;
     display: block;
     width: 28%;
 }
