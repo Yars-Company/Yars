@@ -1,6 +1,12 @@
 body{
     width: 100%;
 }
+p{
+    font-family: 'Cormorant Garamond';
+}
+ h1{
+        font-family: 'Lobster', cursive;
+    }
 a{
     text-decoration: none;
     color: #483c3c;
@@ -17,8 +23,6 @@ ul{
 .shihab{
 display: inline-block;
 margin: 30px;
-
-
 }
 .logo{
     float: left;
@@ -71,6 +75,10 @@ main img {
     width: 164px;
     margin-top: 4%;
 }
+#yazanh4{
+    margin-top: 6%;
+
+}
 #perantPar{
     display: flex;
     text-align: center;
@@ -87,7 +95,7 @@ main img {
     width: 150px;
 
 }
-.claidPar:hover {
+/* .claidPar:hover {
     animation: show 1s forwards ;
 
 }
@@ -99,7 +107,7 @@ main img {
     opacity: 1;
     }
 
-  }
+  } */
 .clidh4{
     padding-left: 3%;
     color: #ff8300;
@@ -166,6 +174,8 @@ footer{
 }
 .color{
     color: white;
+    padding: 60%;
+
 }
 .ulFooter{
     margin-right: 47%;
@@ -220,3 +230,4 @@ footer{
 .link{
     color: white;
 }
+
