@@ -120,6 +120,9 @@ function result(){
     head.setAttribute('id','animate');
     var element = document.getElementById('door');
     element.classList.toggle('doorOpen');
+    var vid = document.getElementById("myVideo");
+    vid.autoplay = true;
+    vid.load();
   }
 }
 
