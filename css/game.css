@@ -199,31 +199,40 @@ animation: move 1s ease-in-out 1s infinite alternate;
     }
 }
 
-.backDoor
-{
-  background-color: #333;
-  position: absolute;
-  width:150px;
-  height:300px;
-  left: 71%;
-    top: 113.5%;
-  margin: 0 auto;
-  margin-top:50px;
-}
+
 #door {
     position: absolute;
-    left: 90%;
-    top: 86.5%;
-    height: 80%;
+    left: 70%;
+    top: 66.5%;
+    height: 100%;
     width: 20%;
-    transform: rotateY(180deg);
-    transform-origin: left;
+    /* transform: rotateY(180deg); */
+    
+}
+.door {
+    transform-origin: right;
     transition: all 0.5s ease-in-out;
-
 }
 
 
 .doorOpen
 {
-  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(75deg);
+}
+.backdoor {
+    background-color: #333333;
+    width: 18%;
+    height: 90%;
+    position: absolute;
+    top: 79%;
+    left: 71%;
+}
+#homeIcon {
+    width: 16%;
+    height: 20%;
+    position: absolute;
+    top: 100%;
+    left: 71%;
+    z-index: 0;
 }
