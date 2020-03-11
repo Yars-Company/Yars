@@ -118,9 +118,10 @@ function result(){
     modal.style.display = 'block';
     var head = document.getElementsByTagName('h3')[0];
     head.setAttribute('id','animate');
-    var element =document.getElementById('door');
-    element.classList.toggle("doorOpen");
+    var element = document.getElementById('door');
+    element.classList.toggle('doorOpen');
   }
 }
+
 
 
